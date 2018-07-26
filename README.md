@@ -1,4 +1,4 @@
 # Clock-js
 Clock JS - A clock in javascript
 
-Demo : https://orivelton10.github.io/clock-js/
+Demo : https://orivelton.github.io/clock-js/
