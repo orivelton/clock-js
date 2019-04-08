@@ -1,14 +1,14 @@
 (function() {
   "use strict";
-  var secondsSelector = document.querySelector('.seconds');
-  var minutesSelector = document.querySelector('.minutes');
-  var hoursSelector = document.querySelector('.hours');
+  const secondsSelector = document.querySelector('.seconds');
+  const minutesSelector = document.querySelector('.minutes');
+  const hoursSelector = document.querySelector('.hours');
 
   function getDate () {
-    var now = new Date();
-    var seconds = now.getSeconds();
-    var minutes = now.getMinutes();
-    var hours = now.getHours();
+    const now = new Date();
+    const seconds = now.getSeconds();
+    const minutes = now.getMinutes();
+    const hours = now.getHours();
 
     toConvert(seconds, 60, secondsSelector);
     toConvert(minutes, 60, minutesSelector);
@@ -20,7 +20,7 @@
   }
 
   function toConvert(value, divider, selector) {
-    var convertResult =  (( value / divider) * 360) + 90;
+    const convertResult =  (( value / divider) * 360) + 90;
     selector.style.transform = `rotate(${convertResult}deg)`;
   }
 
